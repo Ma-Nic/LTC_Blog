@@ -1,0 +1,225 @@
+/* 
+Matt Nicol
+09001885
+DWFMPU - 'The Local Theater Company'
+24/05/19
+V2.0
+*/
+
+
+body
+{
+	/* The base font */
+	font-family: 'Acme', sans-serif;
+	font-size:16px; 
+	font-weight:300;
+	color: #555;
+	margin:0;
+	padding:0;
+	text-align: center;
+}
+
+
+#page
+{
+	max-width:1800px;
+	margin:0 auto;/* t/b  l/r */
+	position: relative;
+}
+
+
+
+/*************** Header *****************/
+
+.navimg 
+{
+	width:100%;
+	height:48px;
+	display: inline;
+}
+
+.navbar 
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    display: block;
+    background-color: #c9d5e0;
+}
+
+
+.navbar a 
+{
+	float: left;
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover 
+{
+    background-color: #a4b3c1;
+}
+
+.navbar-right 
+{
+  float: right;
+}
+
+
+/*********************** Main *************************/
+article 
+{
+	grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr;
+	margin: auto;
+	width: 60%;
+	border: 3px white;
+	padding: 10px;
+}
+
+article * 
+{
+	grid-column: start / end; 
+}
+
+.blogEntry, .blogDate
+{
+	text-align: left;
+}
+
+
+/* Hide role-specific div */
+.guest, .standard, .admin, .updateName, .updateEmail, .updatePassword, .newBlog 
+{
+	display: none;
+} 
+
+.regUser, .indexUser, .announcements
+{
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+
+form blog 
+{
+	
+}
+
+.indexLabel, .regLabel 
+{
+	text-align: right;
+}
+
+.indexInput, .regInput 
+{
+	width: 50%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.blogTitle
+{
+	width: 50%;
+}
+
+.blogBody
+{
+	width: 50%;
+	height: 200px;
+}
+
+.blogPosts 
+{
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+}
+
+
+
+
+
+
+/**************** Footer ****************/
+.Footer 
+{
+	display: flex;
+	justify-content: center;
+    align-items:     center;
+	margin: 10;
+	padding: 10;
+	overflow: hidden;
+    background-color: #c9d5e0;
+}
+
+.Footer a 
+{
+	margin: 10 100 10 100;
+	padding: 10 100 10 100;	
+}
+
+.Footer a:hover 
+{
+	background-color: #a4b3c1;
+}
+
+
+
+
+
+/***************** Media Queries ****************/
+@media (max-width: 599px)
+{
+ 
+
+ 
+}
+ 
+@media (min-width: 600px)
+{
+ 
+...
+ 
+}
+ 
+@media (min-width: 900px)
+{
+ 
+...
+ 
+}
+ 
+@media (min-width: 1200px)
+{
+ 
+...
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

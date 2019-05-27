@@ -1,0 +1,286 @@
+/* 
+Matt Nicol
+09001885
+DWFMPU - 'The Local Theater Company'
+24/05/19
+V2.0
+*/
+
+
+* 
+{
+    margin: 0;
+}
+
+body, html, form
+{
+	/* The base font */
+	font-family: 'Acme', sans-serif;
+	font-size:16px; 
+	font-weight:300;
+	color: #555;
+	margin:0;
+	padding:0;
+	text-align: center;
+    height: 100%;
+}
+
+
+#page
+{
+	max-width:1800px;
+	margin:0 auto;/* t/b  l/r */
+	position: relative;
+}
+
+
+
+/*************** Header *****************/
+
+.navimg 
+{
+	width:100%;
+	height:48px;
+	display: inline;
+}
+
+.navbar 
+{
+	width: auto;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    display: block;
+    background-color: #c9d5e0;
+}
+
+
+.navbar a 
+{
+	width: auto;
+	float: left;
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover 
+{
+    background-color: #a4b3c1;
+}
+
+.navbar-right 
+{
+  float: right;
+}
+
+
+/*********************** Main *************************/
+article 
+{
+	grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr;
+	margin: auto;
+	width: 60%;
+	border: 3px white;
+	padding: 10px;
+}
+
+article * 
+{
+	grid-column: start / end; 
+}
+
+
+
+
+/* Hide role-specific div */
+.guest, .standard, .admin, .updateName, .updateEmail, .updatePassword, .newBlog, .userPriv, .blog-edit 
+{
+	display: none;
+} 
+
+
+/* Format User Input fields */
+.regUser, .indexUser, .announcements
+{
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+
+.indexLabel, .regLabel 
+{
+	text-align: right;
+}
+
+.indexInput, .regInput 
+{
+	width: 70%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+
+/* Format Blog page */
+.blogTitle
+{
+	margin: auto;
+	width: 70%;
+}
+
+.blogBody
+{
+	width: 70%;
+	height: 200px;
+	margin: auto;
+}
+
+.blogPosts 
+{
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+}
+
+.blog-left
+{
+	text-align: left;
+}
+
+
+/* https://www.w3schools.com/howto/howto_css_modals.asp
+ The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+
+
+
+
+/**************** Footer ****************/
+.footer 
+{
+	display: flex;
+	justify-content: center;
+    align-items:     center;
+	margin: 10;
+	padding: 10;
+	overflow: hidden;
+    background-color: #c9d5e0;
+}
+
+.footer a 
+{
+	margin: 10 100 10 100;
+	padding: 10 100 10 100;	
+}
+
+.footer a:hover 
+{
+	background-color: #a4b3c1;
+}
+
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 142px; /* .push must be the same height as .footer */
+}
+
+
+
+
+
+/***************** Media Queries ****************/
+@media (max-width: 599px)
+{
+ 
+
+ 
+}
+ 
+@media (min-width: 600px)
+{
+ 
+...
+ 
+}
+ 
+@media (min-width: 900px)
+{
+ 
+...
+ 
+}
+ 
+@media (min-width: 1200px)
+{
+ 
+...
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
