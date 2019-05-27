@@ -1,0 +1,12 @@
+/* 
+Matt Nicol
+09001885
+DWFMPU - 'The Local Theater Company'
+19/05/19
+V1.2
+*/
+
+
+/*hide role-specific div html*/
+div.guest, div.standard, div.admin {
+display: none;

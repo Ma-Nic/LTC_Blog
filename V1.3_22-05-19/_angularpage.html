@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS and JSON arrays</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body>
+		
+<div ng-app="myApp" ng-controller="myCtrl">
+	
+	<form method="POST" action="new_page.php">
+	
+		Country:
+		<select ng-model="cities" ng-options="country for (country, cities) in countries">
+		</select>
+
+		</br>
+
+		City:
+		<select ng-model="clubs" ng-disabled = "!cities" ng-options="city for (city, clubs) in cities">
+		</select>
+
+		</br>
+
+		Club:
+		<select ng-model="club" ng-disabled = "!clubs"  ng-options="club for club in clubs">
+		</select>
+		
+		<br><br>
+		
+		<input type="submit" value="Submit">
+	</form>
+
+
+</div>
+
+<p>This example shows how to fill a dropdown list using the ng-options directive.</p>
+
+
+<div>
+
+    <a href="page1.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+
+		$scope.countries = {
+
+			'Scotland': {
+
+							'Inverness': ['Inverness CT','Ross County','Patrick Thistle'],
+							'Glasgow' : ['Rangers','Celtic','Queens Park'],
+							'Aberdeen' :['Aberdeen FC','Cove Rangers','East End FC']
+
+
+						},
+
+			'Ireland': {
+
+							'Dublin': ['Bohemian FC', 'Shelbourne United', 'University College Dublin FC'],
+							'Cork': ['Cork City FC', 'Cork Hibernians FC', 'Albert Rovers'],
+							'Kilkenny': ['Killkenny FC', 'Evergreen FC','Carlow FC']
+
+
+					   }
+
+		};
+
+
+});
+</script>
+
+
+				
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+/* 
+Matt Nicol
+09001885
+DWFMPU - 'The Local Theater Company'
+20/05/19
+V1.3
+*/
+
+body{
+	
+font-family: 'Acme', sans-serif;
+font-size:16px; /* the base font */
+font-weight:300;
+color: #555;
+margin:0;
+padding:0;
+
+}
+
+
+#page{
+	
+	max-width:1800px;
+	margin:0 auto;/* t/b  l/r */
+	position: relative;
+	
+}
+
+
+
+/*************** Header *****************/
+.NavBar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    background-color: #c9d5e0;
+}
+
+
+.NavBar li {
+	float: right;	
+}
+
+
+.NavBar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.NavBar li a:hover {
+    background-color: #a4b3c1;
+}
+
+
+
+/*********************** Main *************************/
+article {
+	grid-template-columns: 1fr 5% [start] 90% [end] 5% 1fr;
+}
+
+article * { grid-column: start / end; }
+
+
+/*hide role-specific div html*/
+.guest, .standard, .admin {
+display: none;
+}
+
+.blogPosts {
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+}
+
+
+
+
+/**************** Footer ****************/
+.Footer {
+	display: flex;
+	justify-content: center;
+    align-items:     center;
+	margin: 10;
+	padding: 10;
+	overflow: hidden;
+    background-color: #c9d5e0;
+}
+
+.Footer a {
+	margin: 10 100 10 100;
+	padding: 10 100 10 100;	
+}
+
+.Footer a:hover {
+	background-color: #a4b3c1;
+}
+
+
+
+
+
+/***************** Media Queries ****************/
+@media (max-width: 599px){
+ 
+
+ 
+}
+ 
+@media (min-width: 600px){
+ 
+...
+ 
+}
+ 
+@media (min-width: 900px){
+ 
+...
+ 
+}
+ 
+@media (min-width: 1200px){
+ 
+...
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
